@@ -1,4 +1,5 @@
 import eslint from '@eslint/js'
+import unocss from '@unocss/eslint-config/flat'
 import reactLint from 'eslint-plugin-react'
 import tslint from 'typescript-eslint'
 
@@ -27,5 +28,11 @@ export default [
         ]
       }
     }
-  )
+  ),
+  unocss,
+  {
+    rules: {
+      'unocss/order': 'warn'
+    }
+  }
 ]

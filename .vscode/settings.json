@@ -3,7 +3,8 @@
     "editor.defaultFormatter": "biomejs.biome"
   },
   "[typescriptreact]": {
-    "editor.defaultFormatter": "biomejs.biome"
+    "editor.defaultFormatter": "biomejs.biome",
+    "editor.wordWrap": "on"
   },
   "[javascript]": {
     "editor.defaultFormatter": "biomejs.biome"
@@ -14,9 +15,11 @@
   "[json]": {
     "editor.defaultFormatter": "biomejs.biome"
   },
-  "cSpell.words": ["typecheck"],
+  "cSpell.words": ["ofetch", "preflights", "typecheck"],
   "material-icon-theme.activeIconPack": "react",
+  "iconify.inplace": false,
   "editor.codeActionsOnSave": {
     "source.organizeImports.biome": "explicit"
-  }
+  },
+  "editor.rulers": [100]
 }
