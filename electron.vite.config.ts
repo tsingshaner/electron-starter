@@ -6,10 +6,24 @@ import unocss from 'unocss/vite'
 
 export default defineConfig({
   main: {
-    plugins: [externalizeDepsPlugin()]
+    plugins: [externalizeDepsPlugin()],
+    build: {
+      rollupOptions: {
+        output: {
+          format: 'cjs'
+        }
+      }
+    }
   },
   preload: {
-    plugins: [externalizeDepsPlugin()]
+    plugins: [externalizeDepsPlugin()],
+    build: {
+      rollupOptions: {
+        output: {
+          format: 'cjs'
+        }
+      }
+    }
   },
   renderer: {
     css: { transformer: 'lightningcss' },
@@ -18,7 +32,9 @@ export default defineConfig({
     resolve: {
       alias: {
         '@renderer': resolve('src/renderer/src'),
-        '#ui': resolve('src/renderer/src/components/ui')
+        '#ui': resolve('src/renderer/src/components/ui'),
+        '#ipc': resolve('src/renderer/src/apis/ipc'),
+        '#rest': resolve('src/renderer/src/apis/rest')
       }
     }
   }
