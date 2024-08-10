@@ -15,7 +15,7 @@
   "linter": {
     "enabled": true,
     "rules": {
-      "recommended": false,
+      "recommended": true,
       "a11y": { "noBlankTarget": "error" },
       "complexity": {
         "noExtraBooleanCast": "error",
