@@ -1,0 +1,9 @@
+:root,
+body {
+  --uno: "ma-0 select-none";
+}
+
+* {
+  -webkit-user-drag: none; /* 禁用链接的拖拽 */
+  box-sizing: border-box;
+}
